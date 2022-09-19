@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./src/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERA Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  </head>
+  <body class="antialiased">
+    <div id="app" class="flex flex-row h-screen justify-between font-roboto dark:bg-gray-900">
+      <header class="h-16 bg-white border-b idea-border-blue dark:bg-gray-900 dark:border-gray-700 fixed w-full top-0 left-0 z-40">
+        <div class="px-0 py-3 mx-2 flex items-center justify-between space-x-10">
+          <div class="flex justify-between">
+            <a href="http://103.41.207.125/#/" class="text-gray-800 dark:text-gray-200">
+              <div class="flex items-center">
+                <div class="h-12 w-12 -mt-1 flex-shrink-0"><img class="object-contain" src="./src/images/era-logo.svg"/></div>
+                <p class="text-xl ml-2">Electoral Redistricting App</p>
+              </div>
+            </a>
+          </div>
+          <div class="hidden md:flex md:flex-row md:items-center md:justify-between md:flex-1 md:space-x-2">
+            <div class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-6 md:items-center">
+              <div class="flex justify-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-gray-500 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                <a id="projectstart" href="#" class="font-sans ml-2 text-gray-500 dark:text-gray-200 hover:text-gray-800 topnav-ui-component-action-item">Projects</a>
+              </div>
+              <div class="flex justify-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-gray-500 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <a href="http://103.41.207.125/#/knowledge-hub" class="font-sans ml-2 text-gray-500 dark:text-gray-200 hover:text-gray-800">Knowledge Hub</a>
+              </div>
+              <div class="flex justify-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-gray-500 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+                <a href="http://103.41.207.125/#/upload-data" class="font-sans ml-2 text-gray-500 dark:text-gray-200 hover:text-gray-800">Publish Your Data</a>
+              </div>
+            </div>
+            <div class="flex space-y-3 md:space-y-0 md:items-center md:space-x-1">
+              <p class="px-1 text-gray-900 dark:text-gray-100">The ERA Workshop</p>
+              <button type="button" aria-label="Color Mode" class="p-2 text-gray-500 transition duration-150 ease-in-out bg-gray-100 border border-transparent rounded-md lg:bg-white lg:dark:bg-gray-900 dark:text-gray-200 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark-toggler">
+                <svg id="lg_dark_toggler" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden transform -rotate-90 lg-dark-toggler" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="lg_light_toggler" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden lg-light-toggler" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+              </button>
+              <!-- <a id="serverconnect" href="#" class="flex items-center justify-center h-10 px-4 mt-2 text-sm text-center text-gray-600 transition-colors duration-200 transform border dark:text-gray-300 dark:border-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none topnav-ui-component-action-item">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-current text-gray-600 dark:text-gray-200 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Connect</span>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="app_main_body" class="flex-1 dark:bg-gray-800 bg-gray-200 mb-0 mt-16">
+        <div class="flex flex-col bg-blue-900 custom-landingpage-height">
+          <div class="w-full h-auto pt-4 pb-0">
+            <p class="text-center font-extrabold text-4xl text-white">Welcome to ERA Workshop</p>
+          </div>
+          <div class="w-full h-auto px-10 py-8 text-white bg-blue-900">
+            <p class="p-6 text-justify font-normal text-xl text-blue-900 bg-white">Electoral Redistricting App (ERA) is a universal technological platform or tool for creating electoral districts that could help inspire an electoral boundary delimitation process that conforms international principles and best practice. Through this technology, the creation of electoral districts can be done with relative ease at little or no cost. This application allows the utilisation of digital maps and geographic information systems (GIS) by electoral management bodies, boundaries commissions and the general public in systematically guiding the delimitation of electoral boundaries towards fulfilling the principles of one person-one vote-one value (OPOVOV), contiguity and compactness, to name a few. The use of this Electoral Redistricting App also makes the delimitation of electoral boundaries process more transparent and accessible for anyone interested in researching and advocating for different options of electoral district boundaries.</p>
+          </div>
+          <p class="text-xl text-white text-center font-normal my-4">This software application tool is provided as a global public good that would:</p>
+          <div class="flex flex-row justify-center">
+            <div class="flex flex-row pr-4 border-r border-white">
+              <div class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div class="ml-4 max-w-sm">
+                <p class="text-xl text-white font-normal">enable anyone with the interest to understand better how electoral boundaries were drawn in their respective countries; and</p>
+              </div>
+            </div>
+            <div class="flex flex-row pl-4 border-l border-white">
+              <div class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+              </div>
+              <div class="ml-4 max-w-sm">
+                <p class="text-xl text-white font-normal">to create their own versions of boundary delimitation or drawing/redrawing of electoral districts as they deem appropriate in accordance with international principles and best practice as well as their respective national laws.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row items-center self-center mt-8 mb-3">
+            <div><img class="w-16 mx-1 object-contain" src="./src/images/era-fixed.svg"/></div>
+            <div><img class="w-16 mx-1 object-contain" src="./src/images/idea-fixed.svg"/></div>
+          </div>
+          <p class="text-sm text-white text-center">Copyright&nbsp;&copy;&nbsp;2022 Electoral Redistricting App<br/>Published by | <a href="https://idea.int">INTERNATIONAL IDEA</a></p>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

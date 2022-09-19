@@ -1,0 +1,41 @@
+{
+  "name": "electoral-redistricting-app",
+  "version": "1.0.2",
+  "description": "International IDEA - PERLUDEM Frontend Application",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=./",
+    "serve": "vite preview"
+  },
+  "keywords": [
+    "vite",
+    "tailwindcss",
+    "openlayers",
+    "gridjs",
+    "svgjs",
+    "d3js"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7",
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "crypto-js": "^4.1.1",
+    "d3": "^7.0.1",
+    "date-fns": "^2.23.0",
+    "gridjs": "^5.0.2",
+    "jspdf": "^2.5.0",
+    "jspdf-autotable": "^3.5.23",
+    "numeral": "^2.0.6",
+    "ol": "^6.6.1",
+    "ol-layerswitcher": "^3.8.3",
+    "papaparse": "^5.3.1",
+    "svgjs": "^2.6.2",
+    "vanilla-picker": "^2.12.1"
+  }
+}
